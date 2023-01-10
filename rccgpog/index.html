@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <title>Home Page</title>
+</head>
+<body>
+    <div  class="main-container container" >
+        <!--    navigation bar start here-->
+        <div class="nav-menu grid">
+            <div class="logo branding">
+                <a class="pog-logo" href="./index.html"><img src="./icons/LOGO.svg" alt="Power Of God Official Logo"></a>
+            </div>
+            <div class="navbar">
+                <div class="desktop-view center-menu">
+                    <a href="index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./giving.html">Giving</a>
+                    <a href="./events/index.html">Events</a>
+                    <a href="./prayers.html">Prayers</a>
+                </div>
+            </div>
+            <div class="side-menu">
+                <a href="https://web.facebook.com/rccgpowerofgod/" target="_blank">
+                    <img id="facebook" src="./icons/facebook.svg" alt="power of god facebook page">
+                </a>
+                <span onclick="openNav()" >
+                    <img id="btn-menu" src="./icons/menu.svg" alt="menu-bar">
+                </span>
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+                <div class="overlay-content">
+                  <a href="./Index.html">Home</a>
+                  <a href="./About.html">About Us</a>
+                  <a href="./giving.html">Giving</a>
+                  <a href="./events/index.html">Events</a>
+                  <a href="./prayers.html">Prayers</a>
+                </div>
+            </div>
+        </div>
+        <!--    Navigation bar ends here ...-->
+        
+        <section class="demo body-showcase">
+            <div data="fade-up" class="welcome welcome-demo animate__bounceInUp">
+                <div>
+                    <h1 id="belong" class="animate__animated animate__bounce">YOU <br> BELONG <br> HERE</h1>
+                </div>
+            </div>
+            <div class="landmark landmark-demo animate__bounceInRight">
+                <div>
+                    <h1 class="cursive">WELCOME TO</h1>
+                    <h1 class="normal">RCCG POWER OF GOD</h1>
+                    <h4>
+                        POG parish is not just a space, it is an experience. It is a series of impactful and transformational encounters that bring change to the lives of people. It is felt, seen, heard and perceived like frangrance. It encapsulates on the outside and penetrates beyond our human fibres into the depths of the heart. Under the intense focus of the Spirit and the Word, change happens. "As we behold in a glass with open face, we are being changed..."
+                    </h4>
+                </div>
+            </div>
+            <div class="growth-team discover animate__bounceInRight">
+                <h1>Join Our Growth<br> Team</h1>
+                <button><a href="#">Discover Purpose</a></button>
+            </div>
+            <div class="prayer-request intercede animate__bounceInRight">
+                <h1>Prayer Request</h1>
+                <button><a href="#">We Intercede</a></button>
+            </div>
+            <div class="events animate__bounceInRight">
+                <h1>Upcoming Events</h1>
+                <button><a href="./events.html">VIEW ALL EVENTS</a></button>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-grid">
+                <div class="quick-links">
+                    <h2>QUICK LINKS</h2>
+                    <a href="#">Home</a>
+                    <a href="">Watch Online</a>
+                    <a href="">About POG</a>
+                    <a href="">Online Giving</a>
+                    <a href="">Locations</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="next-steps">
+                    <h2>NEXT STEPS</h2>
+                    <a href="./testimony.html">Share Testimonies</a>
+                    <a href="./carousel-07/index.html">Upcoming Events</a>
+                    <a href="./prayers.html">Just Accepted Christ</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <span><p> &copy; 2022. RCCG Power Of God. All Right Reserved. </p></span>
+            </div>
+        </footer>
+    </div>
+    <script src="./script/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+@import 'utilities';
+
+.main-container{
+    max-width: 100%;
+    text-align: center;
+    margin-top: 70px;
+}
+.nav-menu{
+    background-color: rgb(226, 226, 226);
+    border-bottom: 2px solid var(--textColor);
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    clear: both;
+    z-index: 5;
+}
+
+.navbar{
+    .desktop-view{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            padding: 10px 20px;
+            @include hover-text
+        }
+    }
+}
+.logo{
+    font-size: 24px;
+    a{
+        @include hover-text;
+        img{
+            width: 50px;
+        }
+    }
+
+}
+
+.side-menu #facebook{
+    width: 22px;
+    padding: 15px;
+    @include hover-text;
+
+}
+.side-menu #icon-menu{
+    width: 22px;
+    padding: 15px;
+    @include hover-text;
+
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: var(--bgColor);
+    overflow-x: hidden;
+    transition: 0.5s;
+    .overlay-content a{
+        color: var(--text-color);
+        display: block;
+        font-size: 1.1rem;
+        padding: 15px;
+        @include hover-text;
+    }
+    
+    .closebtn{
+        color: var(--text-color);
+        display: block;
+        font-size: 2rem;
+        padding: 25px;
+        @include hover-text;
+    }
+}
+
+//    Navigation bar Ends here..
+
+
+.demo{
+    width: 100%;
+    .welcome{   
+        background-repeat: no-repeat;
+        background-image: url(../images/welcome.jpg);
+        background-position: right top;
+        width: 100%;
+        height: 600px;
+        h1{
+            text-align: center;
+            color: #fff;
+            font-size: 8vw;
+            padding-top: 120px;
+            margin: 0px;
+        }
+    };
+    .landmark{
+        padding: 100px 200px;
+        text-align: center;
+        background-color: var(--bgColor);
+        .cursive{
+            font-family: 'Montez', cursive;
+            font-size: 3vw;
+            font-weight: lighter;
+            color: rgb(89, 133, 173);
+            margin-bottom: 30px;
+        }
+        .normal{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+            font-size: 3vw;
+            color: rgb(89, 133, 173);
+            margin-bottom: 30px;
+        }
+        h4{
+            color: rgb(89, 133, 173);
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 2;
+        }
+    }
+    .growth-team{
+        background-image: url(../images/media.jpg);
+        text-align: center;
+        padding: 100px;
+        margin-bottom: 10px;
+        @include btns;
+        button{
+            @include clicks ;
+        }
+        
+    }
+    .intercede{
+        background-image: url(../images/prayer.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        @include btns;
+        button{
+            @include clicks ;
+        }
+    }
+    .events{
+        background-image: url(../images/events.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        @include btns;
+        margin-top: 10px;
+        button{
+            @include clicks ;
+        }
+    }
+}
+
+
+// index.html ends here
+
+
+// about us begins here
+
+.container-wrap{
+    background-image: url(../images/about.jpg);
+    background-repeat: no-repeat;
+    @include imgs;
+    height: 200px;
+    text-align: center;
+    h1{
+        font-size: 7vw;
+        color: var(--hover);
+    }                                                                                           
+}
+.about-text{
+    margin: 20px;
+    padding: 30px;
+    .text{
+        text-align : center;
+        ::first-letter{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.9;
+        }
+    }
+}
+
+.leadership{
+    text-align: center;
+    margin: 50px 0px;
+    width: 100%;
+    padding: 20px 0px;
+    h2{
+        font-size: 22px;
+        padding: 20px;
+        color: darkblue;
+    }
+    .cursive{
+        font-family: 'Montez', cursive;
+        font-size: 60px;
+    }
+    .card{
+        padding: 10px;
+        .pastor-info h3{
+            margin: 14px;
+            font-family: 'Montserrat', sans-serif; 
+            font-weight: normalx;
+            color: var(--textColor);
+        }
+        img{
+            margin-top: 70px;
+            width: 50%;
+            
+        }
+    }
+}
+.about-info{
+    padding: 20px;
+    margin: 30px 0px;
+    background-image: url(../images/lion.jpg);
+    //background-size: cover;
+    background-position: left center;
+    text-align: center;
+    min-height: 300px;
+    h2{
+        margin: 20px;
+        color: #000;
+        font-size: 3vw;
+    }
+    p{
+        font-size: 1.5vw;
+        color:var(--hover);
+    }
+    
+
+}
+// footer befins here
+
+.quick-links,.next-steps{
+    margin: 100px;
+    padding: 50px;
+    text-align: left;
+    h2{
+        margin: 20px auto;
+    }
+    a{
+        display: flex;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+.copyright{
+    width: 100%;
+    font-weight: normal;
+    background-color: var(--bgColor);
+    padding: 20px;
+    margin: 0px;
+}
+
+

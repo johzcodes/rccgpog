@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:wght@100;200;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+:root {
+  --textColor: #808080;
+  --hover: #DEC231;
+  --bgColor: rgb(226, 226, 226);
+}
+
+html, * {
+  margin: 0px;
+  padding: 0px;
+  color: var(--textColor);
+}
+
+body {
+  font-family: 'Montez', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: var(--textColor);
+  background-color: var(bgColor);
+}
+
+.container {
+  padding: 0px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #808080;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+}
+
+.pastor-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+@media (max-width: 712px) {
+  .main-container {
+    margin-top: 0px;
+  }
+  .nav-menu, .grid {
+    padding: 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .logo a img {
+    width: 60px;
+    margin-top: 20px;
+  }
+  .navbar {
+    display: none;
+  }
+  .side-menu #facebook {
+    display: none;
+  }
+  .side-menu img {
+    width: 60px;
+    margin-top: 80px;
+  }
+  #belong {
+    font-size: 15vw;
+  }
+  .demo .landmark {
+    padding: 20px;
+    margin: 0px;
+  }
+  .demo .landmark .cursive {
+    font-size: 6vw;
+  }
+  .demo .landmark .normal {
+    margin-bottom: 10px;
+  }
+  .demo .landmark h1 {
+    font-size: 6vw;
+  }
+  .growth-team {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 0px;
+    padding: 0px;
+  }
+  .intercede {
+    background-size: contain;
+  }
+  .quick-links, .next-steps {
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+  }
+  .quick-links h2, .next-steps h2 {
+    margin: 20px;
+  }
+  .quick-links a, .next-steps a {
+    margin-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+}
+
+.main-container {
+  max-width: 100%;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.nav-menu {
+  background-color: #e2e2e2;
+  border-bottom: 2px solid var(--textColor);
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  clear: both;
+  z-index: 5;
+}
+
+.navbar .desktop-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .desktop-view a {
+  padding: 10px 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar .desktop-view a:hover {
+  color: var(--hover);
+  font-weight: bolder;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.logo a {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.logo a:hover {
+  color: var(--hover);
+  font-weight: bolder;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.logo a img {
+  width: 50px;
+}
+
+.side-menu #facebook {
+  width: 22px;
+  padding: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.side-menu #facebook:hover {
+  color: var(--hover);
+  font-weight: bolder;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.side-menu #icon-menu {
+  width: 22px;
+  padding: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.side-menu #icon-menu:hover {
+  color: var(--hover);
+  font-weight: bolder;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: var(--bgColor);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.overlay .overlay-content a {
+  color: var(--text-color);
+  display: block;
+  font-size: 1.1rem;
+  padding: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.overlay .overlay-content a:hover {
+  color: var(--hover);
+  font-weight: bolder;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.overlay .closebtn {
+  color: var(--text-color);
+  display: block;
+  font-size: 2rem;
+  padding: 25px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.overlay .closebtn:hover {
+  color: var(--hover);
+  font-weight: bolder;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.demo {
+  width: 100%;
+}
+
+.demo .welcome {
+  background-repeat: no-repeat;
+  background-image: url(../images/welcome.jpg);
+  background-position: right top;
+  width: 100%;
+  height: 600px;
+}
+
+.demo .welcome h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 8vw;
+  padding-top: 120px;
+  margin: 0px;
+}
+
+.demo .landmark {
+  padding: 100px 200px;
+  text-align: center;
+  background-color: var(--bgColor);
+}
+
+.demo .landmark .cursive {
+  font-family: 'Montez', cursive;
+  font-size: 3vw;
+  font-weight: lighter;
+  color: #5985ad;
+  margin-bottom: 30px;
+}
+
+.demo .landmark .normal {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 3vw;
+  color: #5985ad;
+  margin-bottom: 30px;
+}
+
+.demo .landmark h4 {
+  color: #5985ad;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.demo .growth-team {
+  background-image: url(../images/media.jpg);
+  text-align: center;
+  padding: 100px;
+  margin-bottom: 10px;
+}
+
+.demo .growth-team h1 {
+  color: #fff;
+  font-size: 6vw;
+  padding-top: 80px;
+}
+
+.demo .growth-team button {
+  margin: 30px 5px;
+  padding: 10px 30px;
+  word-spacing: 8px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 8px solid #F0F0F0;
+}
+
+.demo .growth-team button a {
+  color: #FFFFFF;
+}
+
+.demo .growth-team button {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.demo .growth-team button:hover {
+  background-color: var(--hover);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border: none;
+}
+
+.demo .intercede {
+  background-image: url(../images/prayer.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.demo .intercede h1 {
+  color: #fff;
+  font-size: 6vw;
+  padding-top: 80px;
+}
+
+.demo .intercede button {
+  margin: 30px 5px;
+  padding: 10px 30px;
+  word-spacing: 8px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 8px solid #F0F0F0;
+}
+
+.demo .intercede button a {
+  color: #FFFFFF;
+}
+
+.demo .intercede button {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.demo .intercede button:hover {
+  background-color: var(--hover);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border: none;
+}
+
+.demo .events {
+  background-image: url(../images/events.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.demo .events h1 {
+  color: #fff;
+  font-size: 6vw;
+  padding-top: 80px;
+}
+
+.demo .events button {
+  margin: 30px 5px;
+  padding: 10px 30px;
+  word-spacing: 8px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 8px solid #F0F0F0;
+}
+
+.demo .events button a {
+  color: #FFFFFF;
+}
+
+.demo .events button {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.demo .events button:hover {
+  background-color: var(--hover);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border: none;
+}
+
+.container-wrap {
+  background-image: url(../images/about.jpg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+  height: 200px;
+  text-align: center;
+}
+
+.container-wrap h1 {
+  font-size: 7vw;
+  color: var(--hover);
+}
+
+.about-text {
+  margin: 20px;
+  padding: 30px;
+}
+
+.about-text .text {
+  text-align: center;
+}
+
+.about-text .text ::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about-text .text p {
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.leadership {
+  text-align: center;
+  margin: 50px 0px;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.leadership h2 {
+  font-size: 22px;
+  padding: 20px;
+  color: darkblue;
+}
+
+.leadership .cursive {
+  font-family: 'Montez', cursive;
+  font-size: 60px;
+}
+
+.leadership .card {
+  padding: 10px;
+}
+
+.leadership .card .pastor-info h3 {
+  margin: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normalx;
+  color: var(--textColor);
+}
+
+.leadership .card img {
+  margin-top: 70px;
+  width: 50%;
+}
+
+.about-info {
+  padding: 20px;
+  margin: 30px 0px;
+  background-image: url(../images/lion.jpg);
+  background-position: left center;
+  text-align: center;
+  min-height: 300px;
+}
+
+.about-info h2 {
+  margin: 20px;
+  color: #000;
+  font-size: 3vw;
+}
+
+.about-info p {
+  font-size: 1.5vw;
+  color: var(--hover);
+}
+
+.quick-links, .next-steps {
+  margin: 100px;
+  padding: 50px;
+  text-align: left;
+}
+
+.quick-links h2, .next-steps h2 {
+  margin: 20px auto;
+}
+
+.quick-links a, .next-steps a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.copyright {
+  width: 100%;
+  font-weight: normal;
+  background-color: var(--bgColor);
+  padding: 20px;
+  margin: 0px;
+}
+/*# sourceMappingURL=index.css.map */
